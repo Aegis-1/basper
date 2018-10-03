@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+        <title>Start</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="styling.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#sortable" ).sortable();
+    $( "#sortable" ).disableSelection();
+  } );
+  $(document).ready(function(){
+    $("#btn2").click(function(){
+        $("ol").prepend("<li>cadeau</li>");
+    });
+
+    $("#btn3").click(function(){
+        $("#sortable").empty();
+    });
+});
+
+  </script>
+      </head>
+      
+<body>
+<nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="start.html">Uw trouwsite</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li ><a href="start.html">Start</a></li>
+            <li   class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Log in <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="nieuw.html">Nieuw</a></li>
+                <li ><a href="bestaand.html">Bestaand</a></li>
+       
+              </ul>
+            </li>
+            <li class="active"><a href="uwlijst.html">Uw lijst</a></li>
+            <li><a href="chatten.html">Chatten</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="jumbotron text-center">
+          <h1>De trouwlijst.</h1>
+          <p>Voeg en bewerk hier uw cadeaus voor het bruidspaar.
+            
+          </p> 
+        </div>
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-4">
+                <h3>Uw eigen sorteerbare lijst</h3>
+                
+                <p>Er zijn verschillende rankschikkingen, hoe hoger het item staat, des te gewilder is het voor het bruidspaar.</p>
+                <p><button id="btn2">Voeg item toe</button></p>
+                <button id="btn3">Verwijder alle items</button>
+              </div>
+
+
+
+              
+
+
+              <div class="col-sm-4">
+                <div class="lijst">
+                  <ol id="sortable">
+                      
+                    </ol>
+                    
+              </div>
+              </div>
+
+
+
+
+
+
+              <div class="col-sm-4">
+                <h3>Onderling problemen?</h3>        
+                <p> Het kan voorkomen dat er onduidelijkheid is wie welk cadeau gaat kopen, maar wees gerust</p>
+                <p>In onze <a href="chatten.html">chatroom</a>kunt u berichten achterlaten en lezen van andere bruidgasten, zodat u gezamenlijk tot overeenstemming kunt komen </p>
+              </div>
+            </div>
+          </div>
+      
+     
+      
+</body>
+</html>

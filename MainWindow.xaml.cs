@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfApp1
+namespace Memorygame
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -27,7 +27,7 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
-            grid = new MemoryGrid(GameGrid, Nr_Of_Rows, Nr_Of_Cols);    
+            grid = new MemoryGrid(GameGrid, Nr_Of_Rows, Nr_Of_Cols);
         }
     }
 }
